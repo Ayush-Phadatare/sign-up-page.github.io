@@ -1,53 +1,57 @@
 # 💻 Responsive Sign-Up Page
 
-A modern and responsive **Sign-Up Page** built with HTML and CSS, featuring a split layout with social media icons and styled form inputs. Great for integration into broader authentication systems or as a standalone registration component.
+A modern and visually appealing **Sign-Up Page** built with HTML and CSS. This project features a dual-pane layout with social login icons, clean input fields, and elegant design—ideal for front-end user authentication interfaces.
+
+🔗 **Live Preview**: [Click here to visit the website](https://ayush-phadatare.github.io/sign-up-page.github.io/)
 
 ## 🚀 Features
 
-- Responsive, clean UI
-- Dual panel layout (Welcome Back + Sign-Up Form)
-- Social media icons (Font Awesome)
-- Smooth hover effects and transitions
-- Minimal, lightweight codebase
+- Responsive and stylish layout
+- Welcome back + Sign-Up section split view
+- Social media icon buttons (Facebook, Google, LinkedIn)
+- Intuitive hover effects and transitions
+- Font Awesome icon support
+- Clean, modular CSS
 
 ## 📸 Preview
 
-![click here]((https://ayush-phadatare.github.io/sign-up-page.github.io/)) <!-- Optional: Replace with your actual screenshot path -->
+> _Add a screenshot here to showcase the UI_  
+> You can add an image like this after taking a screenshot:  
+> `![Preview](screenshot.png)`
 
-## 🛠️ Built With
+## 🛠️ Technologies Used
 
-- HTML5
-- CSS3
-- [Font Awesome](https://fontawesome.com/) for icons
+- **HTML5**
+- **CSS3**
+- **Font Awesome 6**
 
 ## 📁 File Structure
 
-├── index.html # HTML structure for the page ├── style.css # Styling for layout and form ├── README.md # Project description
+├── index.html # Main HTML page ├── style.css # CSS styling ├── README.md # Project documentation
 
 bash
 Copy
 Edit
 
-## 📝 How to Use
+## 📦 How to Use
 
-1. Clone the repository:
+1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/signup-page.git
-Open the index.html file in your browser.
+   git clone https://github.com/ayush-phadatare/sign-up-page.github.io.git
+Open the index.html file in your browser, or visit the Live Site
 
-⚠️ This is a front-end only form. Backend integration is required for actual account creation.
+✨ Customization Tips
+Connect the form to your backend server for real authentication
 
-✨ Customization
-Replace dummy text in the welcome and registration areas
+Replace the placeholder content and icons with your app's branding
 
-Add action URLs to the <form> tag for backend integration
-
-Customize icons, fonts, or colors in style.css
+Tweak colors and spacing easily via style.css
 
 📬 Contact
-Have questions or suggestions? Feel free to reach out!
+Ayush Phadatare
+For feedback or collaboration, connect via GitHub!
 
-Designed with ❤️ to make sign-up forms beautiful!
+Built with 💚 to make web forms look clean and professional.
 
 yaml
 Copy
@@ -55,4 +59,4 @@ Edit
 
 ---
 
-Let me know if you’d like me to include a live demo link, deployment instructions, or help generate a preview image for the `README`.
+Let me know if you want help adding a screenshot or linking GitHub profile badges or social icons.
