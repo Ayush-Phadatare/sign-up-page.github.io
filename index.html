@@ -1,56 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Sets character encoding and responsive behavior -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <!-- Page title -->
   <title>Login & Register</title>
+  
+  <!-- External CSS file for styling -->
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="script.js">
+  
+  <!-- ❌ Incorrect usage: script.js should be included using <script> tag, not <link> -->
+  <link rel="stylesheet" href="script.js"> 
 </head>
 <body>
+  <!-- Main container that holds all forms and overlay -->
   <div class="container" id="container">
+    
+    <!-- Registration form -->
     <div class="form-container sign-up-container">
       <form action="#">
         <h1>Create Account</h1>
+        
+        <!-- Input fields for user details -->
         <input type="text" placeholder="First Name" />
         <input type="text" placeholder="Last Name" />
         <input type="text" placeholder="Username" />
         <input type="email" placeholder="Email" />
         <input type="password" placeholder="Password" />
+        
+        <!-- Gender selection -->
         <div class="gender">
           <label><input type="radio" name="gender" value="male" /> Male</label>
           <label><input type="radio" name="gender" value="female" /> Female</label>
-        
         </div>
+        
+        <!-- Location details -->
         <input type="text" placeholder="City" />
         <input type="text" placeholder="State" />
+        
+        <!-- Submit button -->
         <button>Sign Up</button>
       </form>
     </div>
 
+    <!-- Login form -->
     <div class="form-container sign-in-container">
       <form action="#">
         <h1>Sign in</h1>
+        
+        <!-- Placeholder social login buttons -->
         <div class="social-container">
-          <a href="#" class="social">F</a>
-          <a href="#" class="social">G+</a>
-          <a href="#" class="social">in</a>
+          <a href="#" class="social">F</a>   <!-- Facebook -->
+          <a href="#" class="social">G+</a>  <!-- Google -->
+          <a href="#" class="social">in</a>  <!-- LinkedIn -->
         </div>
+        
         <span>or use your account</span>
+        
+        <!-- Login input fields -->
         <input type="email" placeholder="Email" />
         <input type="password" placeholder="Password" />
+        
+        <!-- Forgot password link -->
         <a href="#">Forgot your password?</a>
+        
+        <!-- Submit button -->
         <button>Sign In</button>
       </form>
     </div>
 
+    <!-- Overlay container for animation and panel switching -->
     <div class="overlay-container">
       <div class="overlay">
+        
+        <!-- Left panel shown when signing in -->
         <div class="overlay-panel overlay-left">
           <h1>Welcome Back!</h1>
           <p>To keep connected with us please login with your personal info</p>
           <button class="ghost" id="signIn">Sign In</button>
         </div>
+        
+        <!-- Right panel shown when signing up -->
         <div class="overlay-panel overlay-right">
           <h1>Hello, Friend!</h1>
           <p>Enter your personal details and start your journey with us</p>
@@ -60,6 +92,7 @@
     </div>
   </div>
 
+  <!-- External JavaScript file for interactivity (e.g., toggling forms) -->
   <script src="script.js"></script>
 </body>
 </html>
