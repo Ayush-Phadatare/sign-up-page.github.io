@@ -1,160 +1,249 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-body{
-    height: 100vh;
-    width: 100vw;
-    margin: 15vh 0px;
-}
-.main{
-    /* background-color: red; */
-    display: flex;
-    width: 900px;
-    height:80vh ;
-    margin:  auto;
-    border-radius: 20px;
-    border: 2px solid transparent;
+/* Importing the Montserrat font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+/* Universal box-sizing to include padding and border in element's total width/height */
+* {
+  box-sizing: border-box;
 }
 
-.left{
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background-color: rgb(12, 228, 156);
-    border-radius: 10px 0px 0px 10px;
-    border: 2px solid transparent;
-    gap: 35px;
-    padding: 15px;
-
-}
-.left h1{
-    font-size: 40px;
-    font-weight: bolder;
-    color: white;
-}
-.left p{
-    font-size: 15px;
-    color: white;
-}
-
-.left input{
-    border: 3px solid white;
-    border-radius:25px ;
-    width: 120px;
-    height: 45px;
-    text-align: center;
-    font-size: 20px;
-    background-color: transparent;
-    color: white;
-    transition: 0.2s ease-in-out;
-}
+/* Styling for the entire body */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-.right {
-    display: flex;
-    flex-direction: column;
-    background: #ffffff;
-    padding: 30px 20px 10px 20px;
-    width: 65%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 0 10px 10px 0px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  background: #f6f5f7; /* Light background */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  height: 100vh; /* Full viewport height */
+  font-family: 'Montserrat', sans-serif; /* Set font */
+  margin: 0; /* Remove default margin */
 }
-  
-.right h1 {
-    font-size: 28px;
-    color: #444;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    font-weight: bolder;
-  }
-  
-.right div i {
-    font-size: 24px;
-    margin: 0 10px;
-    color: #555;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-  
-.right div i:hover {
-    color: #007BFF;
-  }
-  
-  .right p {
-    font-size: 14px;
-    color: #666;
-    margin: 10px 0;
-  }
-  
-  .right .form {
-    margin-top: 10px;
-    margin: 1-px;
-    width: 70%;
-  }
-  
-  .right form div {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-  }
-  
-  .right form div label {
-    font-size: 18px;
-    color: #444;
-    margin-right: 10px;
-  }
-  
-  .right form div input {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-  }
-  
-  .right form div input:focus {
-    border-color: #007BFF;
-    box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
-  }
-  
-  .right input[type="button"] {
-    background-color: rgb(12, 228, 156);
-    color: white;
-    width: 120px;
-    border-radius: 25px;
-    border: 2px solid white;
-    padding: 10px 15px;
-    /* border-radius: 5px; */
-    cursor: pointer;
-    font-size: 20px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .right input[type="button"]:hover {
-    background: #0056b3;
-  }
 
-    
-  .left input[type="button"]:hover {
-    background: #0056b3;
-    border: rgb(12, 228, 156);
+/* Heading style */
+h1 {
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Paragraph style */
+p {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  margin: 20px 0 30px;
+}
+
+/* Anchor (link) styling */
+a {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+/* Button base style */
+button {
+  border-radius: 20px;
+  border: 1px solid #ff4b2b;
+  background-color: #ff4b2b;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+/* Button click effect */
+button:active {
+  transform: scale(0.95);
+}
+
+/* Remove button outline on focus */
+button:focus {
+  outline: none;
+}
+
+/* "Ghost" button style (transparent background with white border) */
+button.ghost {
+  background-color: transparent;
+  border-color: #fff;
+}
+
+/* Form container styling */
+form {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Input field styling */
+input {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Gender radio buttons layout */
+.gender {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Main wrapper container */
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 
+              0 10px 10px rgba(0, 0, 0, 0.22); /* Soft shadow effect */
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 600px;
+}
+
+/* Form container base style */
+.form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+/* Login form default visible */
+.sign-in-container {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+/* Shift login form to right when right-panel is active */
+.container.right-panel-active .sign-in-container {
+  transform: translateX(100%);
+}
+
+/* Sign up form hidden initially */
+.sign-up-container {
+  left: 0;
+  width: 50%;
+  opacity: 0;
+  z-index: 1;
+}
+
+/* Bring sign up form into view when right-panel is active */
+.container.right-panel-active .sign-up-container {
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+  animation: show 0.6s;
+}
+
+/* Animation to fade/scale in sign up form */
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
   }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Overlay container sits over form containers */
+.overlay-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 100;
+}
+
+/* Shift overlay left when right-panel is active */
+.container.right-panel-active .overlay-container {
+  transform: translateX(-100%);
+}
+
+/* Overlay background and size */
+.overlay {
+  background: linear-gradient(to right, #ff4b2b, #ff416c); /* Gradient */
+  color: #fff;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%; /* Wide enough to cover both form areas */
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+/* Slide overlay to the right when active */
+.container.right-panel-active .overlay {
+  transform: translateX(50%);
+}
+
+/* Base style for overlay panels (left & right) */
+.overlay-panel {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 40px;
+  height: 100%;
+  width: 50%;
+  transition: transform 0.6s ease-in-out;
+}
+
+/* Left overlay panel positioning */
+.overlay-left {
+  transform: translateX(-20%);
+}
+
+/* Bring left panel into view when active */
+.container.right-panel-active .overlay-left {
+  transform: translateX(0);
+}
+
+/* Right overlay panel initial position */
+.overlay-right {
+  right: 0;
+  transform: translateX(0);
+}
+
+/* Push right panel out slightly when active */
+.container.right-panel-active .overlay-right {
+  transform: translateX(20%);
+}
+
+/* Container for social icons */
+.social-container {
+  margin: 20px 0;
+}
+
+/* Style for individual social icon */
+.social {
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  padding: 8px;
+  font-size: 14px;
+  width: 30px;
+  text-align: center;
+}
