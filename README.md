@@ -15,11 +15,10 @@ A modern and visually appealing **Sign-Up Page** built with HTML and CSS. This p
 
 ## 📸 Preview
 
-> _Add a screenshot here to showcase the UI_  
-> You can add an image like this after taking a screenshot:  
-![image]![image](https://github.com/user-attachments/assets/a70fdc45-37a4-45a2-9b34-661b74738546)
 
-![image]![image](https://github.com/user-attachments/assets/a8288a7e-617f-4fe0-b429-0a343295935d)
+![image](https://github.com/user-attachments/assets/a70fdc45-37a4-45a2-9b34-661b74738546)
+
+![image](https://github.com/user-attachments/assets/a8288a7e-617f-4fe0-b429-0a343295935d)
 
 
 
